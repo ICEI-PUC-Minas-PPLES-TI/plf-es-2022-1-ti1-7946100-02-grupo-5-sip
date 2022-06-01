@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="conteudoPrincipal">
+            <h1>Cadastre-se para acessar o sistema do seu prédio</h1>  
+            
+            <form id="formulario-cadastro">
+                <div id ="formularioHalfBox">
+                    <label for="campoNome" id="labelNome">Nome</label>
+                    <input type="text" id="campoNome" placeholder="Digite o seu nome">
+                </div>
+                <div id ="formularioHalfBox">
+                    <label for="campoSobrenome" id="labelSobrenome">Sobrenome</label>
+                    <input type="text" id="campoSobrenome" placeholder="Digite o seu sobrenome">
+                </div>
+                <div id ="formularioFullBox">
+                    <label for="campoEmail" id="labelEmail">Email</label>
+                    <input type="email" id="campoEmail" placeholder="Digite o seu email">
+                </div>
+                <div id ="formularioHalfBox">
+                    <label for="campoTelefone" id="labelTelefone">Telefone</label>
+                    <input type="text" id="campoTelefone" placeholder="(xx) xxxxx-xxxx">
+                </div>
+                <div id ="formularioHalfBox">
+                    <label for="campoDataNascimento" id="labelDataNascimento">Data de Nascimento</label>
+                    <input type="date" id="campoDataNascimento">
+                </div>
+                <div id ="formularioFullBox">
+                    <label for="campoNomeUsuario" id="labelNomeUsuario">Nome de Usuário</label>
+                    <input type="text" id="campoNomeUsuario" placeholder="Digite o nome de usuário desejado">
+                </div>            
+                <div id ="formularioFullBox">
+                    <label for="campoSenha" id="labelSenha">Senha</label>
+                    <input type="password" id="campoSenha" placeholder="Digite a sua senha">
+                </div>
+                <div id ="formularioHalfBox">
+                    <label for="campoCadastroSindico" id="labelCadasroSindico">Síndico</label>
+                    <input type="radio" id="campoCadastroSindico" name="campoTipoCadastro" value="Síndico">              
+                </div>
+                <div id ="formularioHalfBox">
+                    <label for="campoCadastroUsuario" id="labelCadastroUsuario">Morador/Funcionário</label>
+                    <input type="radio" id="campoCadastroUsuario" name="campoTipoCadastro" value="Morador/Funcionario">                
+                </div>                
+                <div id ="formularioFullBox">
+                    <input type="submit" id="btnEnviar" value="Cadastrar">
+                </div>      
+            </form>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
