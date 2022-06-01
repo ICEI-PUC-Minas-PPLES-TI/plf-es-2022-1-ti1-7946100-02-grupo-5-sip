@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de chamados</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<body onload="ListaChamados()">
+    <h1><p> </p><p> </p> Listagem dos Chamados</h1>
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--FALTA ARRUMAR ISSOOOOO!!!!-->
+                <!--div class="alert alert-warning">Chamado não encontrado.</div-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="msg" class="col-sm-2 offset-sm-10 ">
+                <a href="index.html"><input type="button" class="btn btn-secondary" id="btnClear" value="Voltar"></a>
+            </div>
+        </div>        
+        
+        <form id="form-chamado">            
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <select name="filtro_predio" id="filtro_predio" onchange="ListaChamados()" class="form-control">
+                        <option value="">Selecione o predio</option>
+                        <option value="predio 1">predio 1</option>
+                        <option value="predio 2">predio 2</option>
+                        <option value="predio 3">predio 3</option>
+                        <option value="predio 4">predio 4</option>
+                        <option value="predio 5">predio 5</option>
+                    </select>                    
+                </div>
+                <div class="col-sm-8">
+                    <select name="filtro_categoria" id="filtro_categoria" onchange="ListaChamados()"  class="form-control">
+                        <option value="">Selecione a Categoria</option>
+                        <option value="Eletrônica">Eletrônica</option>
+                        <option value="Elétrica">Elétrica</option>
+                        <option value="Mecânica">Mecânica</option>
+                        <option value="Hidráulica">Hidráulica</option>
+                        <option value="Substituição">Substituição</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-chamados" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nº</th>
+                            <th scope="col">Motivo</th>
+                            <th scope="col">Solicitante</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Predio</th>
+                            <th scope="col">Ap</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-chamados">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // função para listar na tabela os chamados que estão associados aos filtros 
+        function ListaChamados() {
+            
+            // Obtem os dados informados pelo usuário nos filtros
+            let fc = document.getElementById('filtro_predio').value;
+            let fcg = document.getElementById('filtro_categoria').value;
+
+            // limpa a lista de chamados apresentados
+            $("#table-chamados").empty();
+
+            // Popula a tabela com os registros do banco de dados
+           for (let index = 0; index < db.data.length; index++) {
+                const chamado = db.data[index];
+
+                // Verifica se os dados do chamado batem com os filtros
+                if (((chamado.predio == fc) || (fc == '')) &&
+                    ((chamado.categoria == fcg) || (fcg == ''))) {
+                    
+                    // Inclui o chamado na tabela    
+                    $("#table-chamados").append(`<tr><td scope="row">${chamado.id}</td>
+                                                <td>${chamado.motivo}</td>
+                                                <td>${chamado.nome}</td>
+                                                <td>${chamado.telefone}</td>
+                                                <td>${chamado.email}</td>
+                                                <td>${chamado.predio}</td>
+                                                <td>${chamado.apartamento}</td>
+                                                <td>${chamado.categoria}</td>
+                                                <td>${chamado.data}</td>
+                                                <td>${chamado.descricao}</td>
+                                                <td>${chamado.status}</td>
+                                            </tr>`);
+                }
+            }
+
+           
+        }
+    </script>
+
+</body>
+
+</html>
