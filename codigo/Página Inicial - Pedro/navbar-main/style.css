@@ -3,6 +3,27 @@
   padding: 0;
 }
 
+.retangulo{
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: meio;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 300px auto;
+  grid-template-areas: 
+      "lateral header"
+      "lateral meio";
+}
+
+header {
+  grid-area: header
+}
+
+
+
 a {
   color: #fff;
   text-decoration: none;
@@ -30,12 +51,12 @@ a:hover {
 }
 
 nav {
+  grid-area: lateral;
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #23232e;
   height: 100vh;
-  width: 15%;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -129,8 +150,7 @@ body{
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin:auto;
-  margin-top: -200px;
+  margin: 0 auto;
 }
 
 /* This container is needed to position the front and back side */
@@ -270,7 +290,4 @@ body{
 }
 
 
-.retangulo{
-margin:auto;
-position:relative
-}
+
