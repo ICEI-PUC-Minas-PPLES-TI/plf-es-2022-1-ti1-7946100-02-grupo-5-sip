@@ -5,13 +5,10 @@
 
 ## Alunos integrantes da equipe
 
-* Anthony Luan da Silva Santos
 * Bárbara Mattioly Andrade
 * Laura Enísia Rodrigues Melo
 * Marco Antônio Miranda Ferreira
-* Naára Leite Garção
 * Pedro Henrique Pimenta Ribeiro
-* Raul Phelipe Salles de Souza
 
 ## Professores responsáveis
 
