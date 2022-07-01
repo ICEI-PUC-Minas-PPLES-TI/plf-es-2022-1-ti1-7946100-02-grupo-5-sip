@@ -203,4 +203,3 @@ function deleteChamado(id) {
     // Atualiza os dados no Local Storage
     localStorage.setItem('db_chamado', JSON.stringify(db));
 }
-<button onclick="window.location.href='/lista_chamados_sindicos.html'">Espaço Síndico</button>
