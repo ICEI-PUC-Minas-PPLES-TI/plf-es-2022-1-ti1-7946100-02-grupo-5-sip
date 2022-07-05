@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/graficos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Monitoramento de Chamados Abertos</h1>
+
+    <nav>
+        <a href="../../../codigo/Pagina-Inicial/pagina-inicial.html" id="logozinha">SIP: Building Security</a>
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle" class="menu-icon">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times-circle"></i>
+        </label>
+        <ul class="nav-list">
+          <li><a href="../../codigo/Cadastro-Chamados-Feedback-Usuario/cadastrochamado.html">Cadastro de Chamados</a></li>
+          <li><a href="../../codigo/Agendamento-Eventos/agendamento-eventos.html">Agendamento de Eventos</a></li>
+          <li><a href="../../codigo/Formulario-Avaliacao/formulario-avaliacao.html">Avaliação do Sistema</a></li>
+          <li><a href="../../codigo/Grafico-Quantidade-de-Chamados-Abertos/graficos.html">Chamados em Aberto</a></li>
+          <li><a href="../../codigo/Indicacao-de-Empresa/indicacao-de-empresa.html">Indicação de Empresa</a></li>
+          <div class="btnSignOut">
+            <li id="btnLogOut">
+              <button type="button" id="btnLogOut" onclick="efetuarLogOut()">
+                <i class="fa fa-sign-out fa_custom fa-2x"></i>
+              </button>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+    <section class ="container">
+        <div class="item">
+            <p>Quantidade de Chamados Abertos Por Categoria</p>
+            <canvas id="graficoQtdChamadosCategoria"></canvas>
+        </div>
+        <div class="item">
+            <p>Quantidade de Chamados Abertos Por Status</p>
+            <canvas id="graficoQtdChamadosStatus"></canvas>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src = "javaScript/graficos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chamados - Síndico</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cadastrochamados.css">
+</head>
+
+<body onload="ListaFeedbacks()">
+    <h1>
+        <p> </p>
+        <p> </p> Listagem dos Feedbacks - Síndico
+    </h1>
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">Chamado não encontrado.</div>-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="msg" class="col-sm-2 offset-sm-10 ">
+                <a href="lista_chamados_sindico.html"><input type="button" class="btn btn-secondary" id="btnClear" value="Voltar"></a>
+            </div>
+                  
+        </div>
+
+
+        
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-chamados" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Resolvido</th>
+                            <th scope="col">Avaliação</th>
+                            <th scope="col">Justificativa</th>
+                            <th scope="col">Comentários </th>
+                            <th scope="col">Sugestão</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody id="table-chamados">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="javaScript/cadastro.js"></script>
+    
+    <script src="https://kit.fontawesome.com/c4805e758d.js" crossorigin="anonymous"></script>
+    <script src="javaScript/feedback.js"></script>
+</body>
+
+</html>

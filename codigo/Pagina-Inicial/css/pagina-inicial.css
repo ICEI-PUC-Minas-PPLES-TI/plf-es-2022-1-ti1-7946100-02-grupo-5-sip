@@ -46,8 +46,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
-  margin-top: 200px;
+  margin-left: 18px;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -55,13 +54,14 @@ a:hover {
 }
 
 nav {
-  grid-area: lateral;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #23232e;
-  height: 100vh;
+  position: fixed;
+  width: 176px;
+  height: 100%;
+  left: 0;
   display: flex;
-  justify-content: right;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -72,7 +72,9 @@ body {
 
 .nav-list {
   list-style: none;
-  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .nav-list li {

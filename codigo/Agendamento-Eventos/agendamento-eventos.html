@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario </title>
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div id ="caixaBotao" class ="menu">
+            <button onclick="estadoBotao()" class="menu"> + Criar</button>
+            <div id="meuMenu" class="conteudo-menu">
+                <a  onclick="novoEvento()" href="#">Evento</a> 
+                <a  onclick="novaReuniao()" href="#">Reunião</a>
+                <input type="text" class="form-control" id="inputDescricao" required placeholder="Título...">
+            </div>
+        </div> 
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+            <div class="calendario">
+                <div class="mês">
+                    <i class="fas fa-angle-left anterior"> <!--Setinha para o mes anterior-->
+                    </i>
+                    <div class="data">
+                        <h1>Junho</h1>
+                        <p></p>
+                    </div>
+                    <i class="fas fa-angle-right proximo"></i> <!--Setinha para o proximo mes-->
+                </div>
+                <div class="diasDaSemana">
+                    <div>Domingo</div>
+                    <div>Segunda</div>
+                    <div>Terça</div>
+                    <div>Quarta</div>
+                    <div>Quinta</div>
+                    <div>Sexta</div>
+                    <div>Sábado</div>
+                </div>
+                <div onclick="novaData(event)" class="dias"></div>
+            </div>
+        </div>
+    </div>
+    <script src="moment.js"></script>
+    <script src="javaScript/calendario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abertura de chamados </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cadastrochamados.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body onload="init()">
+    <h1>
+        <p> </p>Solicitação de serviços
+    </h1>
+
+    <nav>
+        <a href="../../../codigo/Pagina-Inicial/pagina-inicial.html" id="logozinha">SIP: Building Security</a>
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle" class="menu-icon">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times-circle"></i>
+        </label>
+        <ul class="nav-list">
+            <li><a href="../../codigo/Cadastro-Chamados-Feedback-Usuario/cadastrochamado.html">Cadastro de Chamados</a>
+            </li>
+            <li><a href="../../codigo/Agendamento-Eventos/agendamento-eventos.html">Agendamento de Eventos</a></li>
+            <li><a href="../../codigo/Formulario-Avaliacao/formulario-avaliacao.html">Avaliação do Sistema</a></li>
+            <li><a href="../../codigo/Grafico-Quantidade-de-Chamados-Abertos/graficos.html">Chamados em Aberto</a></li>
+            <li><a href="../../codigo/Indicacao-de-Empresa/indicacao-de-empresa.html">Indicação de Empresa</a></li>
+            <div class="btnSignOut">
+                <li id="btnLogOut">
+                    <button type="button" id="btnLogOut" onclick="efetuarLogOut()">
+                        <i class="fa fa-sign-out fa_custom fa-2x"></i>
+                    </button>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--FALTA ARRUMAR ISSOOOOO!!!!-->
+                <!--<div class="alert alert-warning">Chamado não encontrado.</div>-->
+            </div>
+        </div>
+
+        <form id="form-chamado">
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="inputId">Id</label>
+                    <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                </div>
+                <div class="col-sm-10">
+                    <label for="inputMotivo">Motivo do chamado (*)</label>
+                    <input type="text" class="form-control" id="inputMotivo" required placeholder="Informe o problema ">
+                </div>
+
+                <div class="col-sm-8">
+                    <label for="inputNome">Nome (*)</label>
+                    <input type="text" class="form-control" id="inputNome" required placeholder="Informe seu nome">
+                </div>
+                <div class="col-sm-4">
+                    <label for="inputTelefone">Telefone (*)</label>
+                    <input type="tel" class="form-control" id="inputTelefone" required placeholder="(xx) xxxxx-xxxx">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputEmail">E-mail (*)</label>
+                    <input type="email" class="form-control" id="inputEmail" required placeholder="Informe seu e-mail">
+                </div>
+                <div class="col-sm-4">
+                    <label for="inputPredio">Prédio</label>
+                    <input type="text" class="form-control" id="inputPredio" placeholder="Informe seu prédio">
+                </div>
+                <div class="col-sm-2">
+                    <label for="inputApartamento">Apartamento</label>
+                    <input type="number" class="form-control" id="inputApartamento" required
+                        placeholder="Informe seu ap.">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputCategoria">Categoria (*)</label>
+                    <input type="text" class="form-control" id="inputCategoria" required
+                        placeholder="Categoria do problema">
+                </div>
+                <div class="col-sm-2">
+                    <label for="inputData">Data</label>
+                    <input type="date" class="form-control" id="inputData" required placeholder="   /   /  ">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <label for="inputDescricao">Descrição do problema (*)</label>
+                    <input type="text" class="form-control" id="inputDescricao" required
+                        placeholder="Descreva aqui o problema que ocorreu o mais detalhado possível.">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <small>(*) Campos obrigatórios</small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                    <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+                    <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+                    <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
+                    <a href="lista_chamados.html"><input type="button" class="btn btn-primary" id="btnClear"
+                            value="Pesquisar Chamados"></a>
+                    <a href="lista_chamados_sindico.html"><input type="button" class="btn btn-light" id="btnClear"
+                            value="Espaço Síndico"></a>
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-chamados" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nº</th>
+                            <th scope="col">Motivo</th>
+                            <th scope="col">Solicitante</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Predio</th>
+                            <th scope="col">Ap</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Status</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="table-chamados">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script>
+        function exibeChamados() {
+            // Remove todas as linhas do corpo da tabela
+            $("#table-chamados").html("");
+
+            // Popula a tabela com os registros do banco de dados
+            for (i = 0; i < db.data.length; i++) {
+                let chamado = db.data[i];
+                if (chamado.status == 'concluido') {
+                    $("#table-chamados").append(`<tr><td scope="row">${chamado.id}</td>
+                                                <td>${chamado.motivo}</td>
+                                                <td>${chamado.nome}</td>
+                                                <td>${chamado.telefone}</td>
+                                                <td>${chamado.email}</td>
+                                                <td>${chamado.predio}</td>
+                                                <td>${chamado.apartamento}</td>
+                                                <td>${chamado.categoria}</td>
+                                                <td>${chamado.data}</td>
+                                                <td>${chamado.descricao}</td>
+                                                <td> <i class="fa-solid fa-circle-check"></i> </td>
+                                            </tr>`);
+                }
+
+                else {
+                    if (chamado.status == 'pendente') {
+                        $("#table-chamados").append(`<tr><td scope="row">${chamado.id}</td>
+                                                <td>${chamado.motivo}</td>
+                                                <td>${chamado.nome}</td>
+                                                <td>${chamado.telefone}</td>
+                                                <td>${chamado.email}</td>
+                                                <td>${chamado.predio}</td>
+                                                <td>${chamado.apartamento}</td>
+                                                <td>${chamado.categoria}</td>
+                                                <td>${chamado.data}</td>
+                                                <td>${chamado.descricao}</td>
+                                                <td> <i class="fa-solid fa-circle-xmark"></i> </td>
+                                            </tr>`);
+                    }
+                    else {
+                        if ((chamado.status == 'andamento')) {
+                            $("#table-chamados").append(`<tr><td scope="row">${chamado.id}</td>
+                                                <td>${chamado.motivo}</td>
+                                                <td>${chamado.nome}</td>
+                                                <td>${chamado.telefone}</td>
+                                                <td>${chamado.email}</td>
+                                                <td>${chamado.predio}</td>
+                                                <td>${chamado.apartamento}</td>
+                                                <td>${chamado.categoria}</td>
+                                                <td>${chamado.data}</td>
+                                                <td>${chamado.descricao}</td>
+                                                <td> <i class="fa-solid fa-circle-minus"></i> </td>
+                                            </tr>`);
+                        }
+
+                        else {
+
+                            $("#table-chamados").append(`<tr><td scope="row">${chamado.id}</td>
+                                                            <td>${chamado.motivo}</td>
+                                                            <td>${chamado.nome}</td>
+                                                            <td>${chamado.telefone}</td>
+                                                            <td>${chamado.email}</td>
+                                                            <td>${chamado.predio}</td>
+                                                            <td>${chamado.apartamento}</td>
+                                                            <td>${chamado.categoria}</td>
+                                                            <td>${chamado.data}</td>
+                                                            <td>${chamado.descricao}</td>
+                                                            <td>${chamado.status}</td>
+                                                        </tr>`);
+                        }
+
+                    }
+                }
+            }
+        }
+
+        function init() {
+            // Adiciona funções para tratar os eventos 
+            $("#btnInsert").click(function () {
+                // Verfica se o formulário está preenchido corretamente
+                if (!$('#form-chamado')[0].checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoMotivo = $("#inputMotivo").val();
+                let campoNome = $("#inputNome").val();
+                let campoTelefone = $("#inputTelefone").val();
+                let campoEmail = $('#inputEmail').val();
+                let campoPredio = $("#inputPredio").val();
+                let campoApartamento = $("#inputApartamento").val();
+                let campoCategoria = $('#inputCategoria').val();
+                let campoData = $('#inputData').val();
+                let campoDescricao = $('#inputDescricao').val();
+                let campoStatus = $('#inputstatus').val();
+
+                let chamado = {
+                    motivo: campoMotivo,
+                    nome: campoNome,
+                    telefone: campoTelefone,
+                    email: campoEmail,
+                    predio: campoPredio,
+                    apartamento: campoApartamento,
+                    categoria: campoCategoria,
+                    data: campoData,
+                    descricao: campoDescricao,
+                    status: 'andamento',
+                };
+
+                insertChamado(chamado);
+
+                // Reexibe os chamados
+                exibeChamados();
+
+                // Limpa o formulario
+                $("#form-chamado")[0].reset();
+            });
+
+            // Intercepta o click do botão Alterar
+            $("#btnUpdate").click(function () {
+                // Obtem os valores dos campos do formulário
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um chamado para ser alterado.");
+                    return;
+                }
+                let campoMotivo = $("#inputMotivo").val();
+                let campoNome = $("#inputNome").val();
+                let campoTelefone = $("#inputTelefone").val();
+                let campoEmail = $('#inputEmail').val();
+                let campoPredio = $("#inputPredio").val();
+                let campoApartamento = $("#inputApartamento").val();
+                let campoCategoria = $('#inputCategoria').val();
+                let campoData = $('#inputData').val();
+                let campoDescricao = $('#inputDescricao').val();
+                let campoStatus = $('#inputDStatus').val();
+
+                let chamado = {
+                    motivo: campoMotivo,
+                    nome: campoNome,
+                    telefone: campoTelefone,
+                    email: campoEmail,
+                    predio: campoPredio,
+                    apartamento: campoApartamento,
+                    categoria: campoCategoria,
+                    data: campoData,
+                    descricao: campoDescricao,
+                    status: campoStatus,
+                };
+
+                updateChamado(parseInt(campoId), chamado);
+
+                // Reexibe os chamados
+                exibeChamados();
+
+                // Limpa o formulario
+                $("#form-chamado")[0].reset();
+            });
+
+            // Intercepta o click do botão Excluir
+            $("#btnDelete").click(function () {
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um chamado a ser excluído.");
+                    return;
+                }
+                deleteChamado(parseInt(campoId));
+
+                // Reexibe os chamados
+                exibeChamados();
+
+                // Limpa o formulario
+                $("#form-chamado")[0].reset();
+            });
+
+            // Intercepta o click do botão Listar Chamados
+            $("#btnClear").click(function () {
+                $("#form-chamado")[0].reset();
+            });
+
+            // Oculta a mensagem de aviso após alguns segundos
+            $('#msg').bind("DOMSubtreeModified", function () {
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 5000);
+            });
+
+            // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+            $("#grid-chamados").on("click", "tr", function (e) {
+                let linhaChamadochamado = this;
+                colunas = linhaChamadochamado.querySelectorAll("td");
+
+                $("#inputId").val(colunas[0].innerText);
+                $("#inputMotivo").val(colunas[1].innerText);
+                $("#inputNome").val(colunas[2].innerText);
+                $("#inputTelefone").val(colunas[3].innerText);
+                $("#inputEmail").val(colunas[4].innerText);
+                $("#inputPredio").val(colunas[5].innerText);
+                $("#inputApartamento").val(colunas[6].innerText);
+                $("#inputCategoria").val(colunas[7].innerText);
+                $("#inputData").val(colunas[8].innerText);
+                $("#inputDescrição").val(colunas[9].innerText);
+                $("#inputStatus").val(colunas[10].innerText);
+            });
+
+            exibeChamados();
+        }
+    </script>
+    <script src="javaScript/cadastro.js"></script>
+
+    <script src="https://kit.fontawesome.com/c4805e758d.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+/*menu*/
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+#btnLogOut {
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+}
+
+#btnLogOut:hover {
+    opacity: 0.7;
+}
+
+#logozinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+nav {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    position: fixed;
+    width: 176px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.fa_custom {
+    margin-left: 30px;
+}
+
+nav {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    position: fixed;
+    width: 176px;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#menuToggle {
+    display: none;
+}
+
+/*fim menu*/

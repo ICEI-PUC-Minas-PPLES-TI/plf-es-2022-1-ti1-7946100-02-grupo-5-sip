@@ -1,0 +1,138 @@
+body {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #23232e;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 0px;
+    display: grid;
+    grid-template-areas: "item item";
+    grid-gap: 20px;
+    padding: 0px 20px 0px 20px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.item {
+    max-width: 520px;
+    min-width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    grid-area: "item";
+    background-color: rgb(207, 209, 220);
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(59, 61, 62);
+    font-size: large;
+    text-align: center;
+    margin: 3%;
+}
+
+/*menu*/
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+#btnLogOut {
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+}
+
+#btnLogOut:hover {
+    opacity: 0.7;
+}
+
+#logozinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+nav {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    position: fixed;
+    width: 176px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.fa_custom {
+    margin-left: 30px;
+}
+
+nav {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    position: fixed;
+    width: 176px;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#menuToggle {
+    display: none;
+}
+
+/*fim menu*/
+
+@media (max-width: 1078px) {
+    .container {
+        grid-template-areas: "item";
+    }
+}
+
+@media (max-width: 532px) {
+    .container {
+        grid-template-areas: "item";
+    }
+
+    .item {
+        max-width: 370px;
+        min-width: 270px;
+        max-height: 550px;
+        min-height: 400px;
+    }
+}
