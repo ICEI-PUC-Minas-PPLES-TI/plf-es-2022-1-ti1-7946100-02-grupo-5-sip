@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/cadastro-login.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="container-login">
+			<div class="wrap-login">
+				<form class="login-form">
+					<span class="login-form-title">
+						Faça o login
+					</span>
+
+					<div id='msgError'></div>
+
+					<div class="wrap-input margin-top-35 margin-bottom-35">
+						<input id="text-campo-email-login" class="input-form" type="text" name="email" autocomplete="off">
+						<span id="label-campo-email-login" class="focus-input-form" data-placeholder="E-mail"></span>
+					</div>
+
+					<div class="wrap-input margin-bottom-35">
+						<input id="text-campo-senha-login" class="input-form" type="password" name="password">
+						<span id="label-campo-senha-login" class="focus-input-form" data-placeholder="Senha"></span>
+					</div>
+
+					<div class="container-login-form-btn">
+						<button id='btnLogin' type="button" onclick='efetuarLogin()' class="login-form-btn">
+							Efetuar Login
+						</button>
+					</div>
+
+					<ul class="login-utils">
+						<li>
+							<span class="text1">
+								Não tem conta?
+							</span>
+							<a href="cadastro.html" class="text2">
+								Criar
+							</a>
+						</li>
+					</ul>
+				</form>
+				<div class="logoImagem">
+					<img src="images/login.png" width="300" height="300" class="margin-left-90" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		let inputs = document.getElementsByClassName('input-form');
+		for (let input of inputs) {
+			input.addEventListener("blur", function() {
+				if(input.value.trim() != ""){
+					input.classList.add("has-val");
+				} else {
+					input.classList.remove("has-val");
+				}
+			});
+		}
+	</script>
+	<script src="javascript/login.js"></script>
+
+</body>
+</html>

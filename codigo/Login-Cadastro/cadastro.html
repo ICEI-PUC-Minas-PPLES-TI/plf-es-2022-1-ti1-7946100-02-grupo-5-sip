@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="css/cadastro-login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-cadastro">
+            <span class="login-form-title">
+                Cadastre-se para acessar o sistema do seu prédio
+            </span>
+            <div class="wrap-cadastro">
+                <form id="formulario-cadastro">
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <label class="input-cadastro" for="campoNome" id="labelNome">Nome</label>
+                        <input class="input-text-cadastro" type="text" id="campoNome">
+                    </div>
+                    <div class="wrap-input margin-bottom-35">
+                        <label class="input-cadastro" for="campoSobrenome" id="labelSobrenome">Sobrenome</label>
+                        <input class="input-text-cadastro" type="text" id="campoSobrenome">
+                    </div>
+                    <div class="wrap-input margin-bottom-35">
+                        <label class="input-cadastro" for="campoEmail" id="labelEmail">Email</label>
+                        <input class="input-text-cadastro" type="email" id="campoEmail">
+                    </div>
+                    <div class="wrap-input margin-bottom-35">
+                        <label class="input-cadastro" for="campoTelefone" id="labelTelefone">Telefone</label>
+                        <input class="input-text-cadastro" type="text" id="campoTelefone" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="wrap-input margin-bottom-35">
+                        <label class="input-cadastro" for="campoDataNascimento" id="labelDataNascimento">Data de
+                            Nascimento</label>
+                        <input class="input-text-cadastro" type="date" id="campoDataNascimento">
+                    </div>
+                    <div class="wrap-input margin-bottom-35">
+                        <label class="input-cadastro" for="campoNomeUsuario" id="labelNomeUsuario">Nome de
+                            Usuário</label>
+                        <input class="input-text-cadastro" type="text" id="campoNomeUsuario">
+                    </div>
+                    <div class="wrap-input margin-bottom-35">
+                        <label class="input-cadastro" for="campoSenha" id="labelSenha">Senha</label>
+                        <input class="input-text-cadastro" type="password" id="campoSenha">
+                    </div>
+                    <div id="wrap-input margin-top-35 margin-bottom-35">
+                        <label class="input-cadastro" for="campoCadastroUsuario">Tipo de Cadastro</label>
+                        <select class="input-text-cadastro" id="campoCadastroUsuario" name="campoTipoCadastro">
+                            <option value="Morador">Morador</option>
+                            <option value="Sindico">Síndico</option>
+                        </select>
+                    </div>
+                    <div id="container-cadastro-form-btn">
+                        <button type="button" id="btnEnviar" class="cadastro-form-btn">
+                            Cadastrar
+                        </button>
+                    </div>
+                </form>
+                <div class="div-logo-img-cadastro">
+                    <img src="images/login.png" class="logoImagemCadastro" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javaScript/cadastro.js"></script>
+</body>
+
+</html>

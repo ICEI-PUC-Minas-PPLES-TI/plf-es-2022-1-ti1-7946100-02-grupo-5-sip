@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Meu lindo projeto</title>
+  <title>Página Inicial</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/pagina-inicial.css" />
 </head>
 
 <body>
@@ -23,7 +23,7 @@ z-index:1000;" target="_blank">
   <div id="wrapper">
     <header>
       <div class="container">
-        <img src="predios.png" class="mx-auto d-block" style="width:50%">
+        <img src="images/predios.png" class="mx-auto d-block" style="width:80%">
       </div>
     </header>
 
@@ -40,6 +40,13 @@ z-index:1000;" target="_blank">
         <li><a href="#">Correios</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Emergências</a></li>
+        <div class="btnSignOut">
+          <li id="btnLogOut">
+            <button type="button" id="btnLogOut" onclick="efetuarLogOut()">
+              <i class="fa fa-sign-out fa_custom fa-2x"></i>
+            </button>
+          </li>
+        </div>
       </ul>
     </nav>
 
@@ -47,7 +54,7 @@ z-index:1000;" target="_blank">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="Avatar.png" alt="Avatar" width="300px" height="300px">
+            <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
           </div>
           <div class="flip-card-back">
             <h1>Informações de segurança</h1>
@@ -60,7 +67,7 @@ z-index:1000;" target="_blank">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="Avatar.png" alt="Avatar" width="300px" height="300px">
+            <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
           </div>
           <div class="flip-card-back2">
             <h1>Informações de segurança</h1>
@@ -73,7 +80,7 @@ z-index:1000;" target="_blank">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="Avatar.png" alt="Avatar" width="300px" height="300px">
+            <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
           </div>
           <div class="flip-card-back3">
             <h1>Informações de segurança</h1>
@@ -86,7 +93,8 @@ z-index:1000;" target="_blank">
     </div>
 
   </div>
-  <script src="mobile-navbar.js"></script>
+  <script src="javaScript/mobile-navbar.js"></script>
+  <script src="javaScript/logOut.js"></script>
 </body>
 
 </html>
