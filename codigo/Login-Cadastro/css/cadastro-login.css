@@ -72,14 +72,15 @@ button:hover {
 
 .text1 {
   font-family: Poppins-Regular;
-  font-size: 15px;
+  font-size: 20px;
   color: var(--text1);
   line-height: 1.5;
 }
 
 .text2 {
   font-family: Poppins-Regular;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bold;
   color: var(--main-color);
   line-height: 1.5;
 }
@@ -124,10 +125,11 @@ button:hover {
   background: var(--white-color);  
 }
 
-.wrap-login, .wrap-cadastro {
-  width: 370px;
+.wrap-login {
+  width: 50%;
   margin-right: 50px;
   background: var(--white-color);
+  display: flex;
 }
 
 #msgError{
@@ -317,14 +319,8 @@ a:hover {
   left: 0;
 }
 
-
-#formulario-cadastro{
-  width: 180%;
-}
-
 .logoImagem{
-  width:25%;
-  height:25%;
+    align-self: center;
 }
 
 /*Cadastro*/
@@ -354,11 +350,69 @@ a:hover {
   font-family: Poppins-Medium;
   font-size: 18px;
   line-height: 1.2;
-  width: 500px;
+  width: 100%;
   color: #5e5e5e;
 }
 
 .div-logo-img{
   width: 50%;
   height: 50%;
+}
+
+.div-logo-img-cadastro{
+  align-self: center;
+}
+
+.logoImagemCadastro{
+  width:550px;
+}
+
+.wrap-cadastro {
+  width: 100%;
+  margin-left: 200px;
+  background: var(--white-color);
+  display: flex;
+}
+
+#formulario-cadastro{
+  width: 45%;
+}
+
+@media screen and (max-width:1240px){
+  .wrap-login {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logoImagem{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width:1051px){
+  .wrap-cadastro{
+    width: 100%;
+    display: flex;
+    margin: 0 0;
+    flex-wrap: wrap;
+  }
+
+  #formulario-cadastro{
+    width: 100%;
+  }
+
+  .div-logo-img-cadastro{
+    margin-left: auto;
+    margin-right: auto;    
+  }
+}
+
+@media screen and (max-width:537px) {
+  .logoImagemCadastro{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;    
+  } 
 }
