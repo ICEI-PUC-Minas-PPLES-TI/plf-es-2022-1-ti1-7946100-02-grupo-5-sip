@@ -378,11 +378,45 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
+SIP é uma ferramenta que visa organizar e otimizar os problemas cotidianos de um prédio/condomínio para que tanto os moradores e o síndico consigam gerenciar as principais demandas e necessidades destes espaços. O sistema SIP promete a organização das demandas,  análise dos indicadores de performance, padrão de qualidade, agendamento de reuniões e eventos, além da possibilidade de contratar empresas parceiras para a solução das demandas preditivas.
 
 ## Tecnologias Utilizadas
 
-......  COLOQUE AQUI O SEU TEXTO ......
+As tecnologias utilizadas para resolver o problema e implementar sua solução foram: 
+
+#    **Linguagem HTML:**
+            Linguagem utilizada para a construção das páginas do site.
+#    **Linguagem CSS:**
+             Linguagem utilizada para estilizar e formatar as páginas do site.
+#    **Linguagem JavaScript:**
+             Linguagem utilizada para implementar itens de modo dinâmico nas páginas do site.
+#    **Bootstrap:**
+	Framework com componentes de interface que une vários projetos de software, provendo uma funcionalidade. 
+#    **API:**
+	Recurso utilizado para integrar o sistema 
+            
+#    **WhatsApp:**
+	Utilizada para integrar o botão o do WhatsApp caso o usuário quisesse entrar em contato com a empresa SIP (donos do projeto)
+             
+#    **cdn.jsdelivr:**
+	Utilizada para integrar os gráficos gerados dos chamados
+             
+#    **Bibliotecas:**
+	Utilizadas para realizarem alguma função na página web
+            
+#    **JQuery:**
+	Utilizado para gerenciar os eventos, as animações e as interações Ajax. 
+            
+#    **Chart:**
+ 	para gerar gráficos integrados do total de demandas registradas no chamado, de acordo com o total de chamados separados por categoria
+#    **CAJAX:**
+	Combinação de várias tecnologias para permitir aplicações interativas 
+#    **JASON:**
+	    Utilizado para a troca de dados pela Web. 
+ #    **LocalStorage:**
+ 	Utilizado para a troca de dados pela Web. Ele oferece um armazenamento permanente de dados e que podem ser acessados a partir de qualquer janela do site.
+#    Font Awesome:**
+	Utilizado alguns ícones que foram personalizadas no CSS.
 
 > Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
 > problema, ou seja, implementar a sua solução. Liste todas as
