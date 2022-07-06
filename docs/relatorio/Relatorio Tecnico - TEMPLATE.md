@@ -35,7 +35,6 @@ Os membros do grupo são:
 - [Projeto de Interface](#projeto-de-interface)
   - [User Flow](#user-flow)
   - [Wireframes](#wireframes)
-- [Metodologia](#metodologia)
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
@@ -262,11 +261,9 @@ Link de acesso ao protótipo interativo: https://www.figma.com/file/96nd2RS4AxKH
 # Metodologia
 
 **Metodologias ágeis**
-Durante a realização do projeto, definimos duas reuniões diárias: Daily Scrum e uma reunião de divisão de tarefas. 
-
-A Daily foi realizada pela manhã e durava no máximo 15 minutos. Nela era conversado o que cada integrante concluiu da sua parte no projeto e o que iria fazer até a próxima reunião (que seria a reunião vespertina).
-
-A reunião vespertina era realizada para o grupo definir as tarefas da próxima etapa do projeto e conversar sobre sugestões e críticas do que já foi feito no projeto, do que poderia ser implementado e melhorado. 
+No trabalho foi utilizado a metodologia SCRUM para desenvolver o projeto. Inicialmente foi realizado o Backlog do produto, em seguida divididas as tarefas realizadas em Sprints, e por fim realizadas incrementos no sistema, com iterações curtas, para melhoria do projeto. O grupo foi dividido com a presença de um Scrum Master, um dono do produto e o time desenvolvedor.
+ 
+ Antes das realizações das Sprints, todo o projeto foi organizado em um quadro Kanban, no Trello, com partes de "a fazer", "fazendo" e "concluído", para o grupo se organizar, estabelecer as metas do projeto e ter em vista todo o processo do sistema. Além disso, durante o processo foi estabelecidas datas de entregas das funcionalidades, para não comprometer o projeto e tarefas de outro integrante.
 
 **Processo: Design Thinking**
 No processo de Design Thinking o grupo utilizou a plataforma Miro. Ela auxiliou para melhor selecionar e organizar todas as ideias da equipe. Foram realizadas várias reuniões para discutir e definir os principais requisitos do projeto, tanto os funcionais, quanto os não funcionais.
@@ -288,6 +285,7 @@ No processo de FrameWork Scrum o grupo utilizou a plataforma Figma. Ela auxiliou
 Durante esse processo, foram realizadas 2 reuniões diariamente, uma daily matutina para a equipe se conscientizar sobre as tarefas de cada um e qual impacto estava causando no trabalho de outro integrante. Já na reunião vespertina, era conversado sobre as atividades realizadas, qual seria a próxima parte do projeto a ser implementada e separada a tarefa que cada um iria executar.
 
 
+
 ## Divisão de Papéis
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definições do processo de desenvolvimento.
@@ -303,6 +301,15 @@ A equipe está organizada da seguinte forma:
 
 Para organização e distribuição das tarefas do projeto, a equipe utilizou o Discord com canais de texto para definir prazos e projetos a serem entregues. 
 
+## Processo
+Inicialmente, o projeto contava com 7 participantes e possuía o tema de "SIP - Segurança Predial". Porém, 3 dos integrantes se desvincularam do grupo. Com isso, algumas funcionalidades do sistema, pensadas inicialmente, ficaram comprometidas. Desse modo, o grupo se reuniu e tomou uma decisão sobre o tema e o projeto em questão: ficou decidido mudar o tema para "SIP - Chamados Prediais". Com isso, foram acrescentadas novas funcionalidades no sistema de acordo com o novo projeto.  
+
+Em seguida, durante as etapas da Sprint 2 e 3, foram realizadas as funcionalidades do sistema de modo individual, para que na Sprint 4, o projeto fosse integrado com todos os artefatos. É válido ressaltar que durante a realização das Sprints foram realizadas reuniões semanais no Discord, a fim de averiguar como estava a situação de cada integrante com sua responsabilidade (o que já foi feito, o que irá fazer ou o que estava impedindo de realizar alguma tarefa). E com isso, o projeto foi tomando performance.
+
+Por fim, foi realizada a integração de todas as aplicações do projeto. Durante esse processo, foram exercidas as ações de verificação do sistema com testes de software, com a finalidade de evitar anomalias no sistema, averiguar conformidades e não conformidades com os requisitos, averiguar o desempenho e também, a qualidade do software. Em seguida foi postado todo o projeto no repositório do Git Hub e realizada sua publicação gerando um link na WEB.
+
+## Atribuições
+As atribuições do trabalho ocorreram por meio do Visual Studio, editando e integrando todas as funcionalidades do sistema com códigos em HTML, CSS e JavaScript. Também foi utilizado como recurso, os aplicativos Discord e WhatsApp para a realizações de chamadas com o time de desenvolvimento. Durante as reuniões, eram acordadas novas funcionalidades e edições de artefatos do projeto. Por fim, era realizado o upload dos códigos no Git Hub e verificado todas as atribuições do projeto. 
 
 
 ## Ferramentas
@@ -316,6 +323,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 |Projeto de Interface e  Wireframes | Figma |  https://www.figma.com/file/96nd2RS4AxKHqzXrUbuMJP/Prot%C3%B3tipo-SIP?node-id=0%3A1 | 
 |Gerenciamento do Projeto | Discord | https://discord.com/login?redirect_to=%2Fchannels%2F%40me |
 |Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-02-grupo-5-sip | 
+|Gestão de tarefas | Trello | https://trello.com/b/KXKGzARM/quadro-kanban |
 
 A metodologia adotada pelo grupo referente às ferramentas utilizadas para a realização do projeto foram:
 
@@ -351,6 +359,7 @@ Após o término do desenvolvimento, foi aberto um Pull Request da branch onde e
 
 SIP é uma ferramenta que visa organizar e otimizar os problemas cotidianos de um prédio/condomínio para que tanto os moradores e o síndico consigam gerenciar as principais demandas e necessidades destes espaços. O sistema SIP promete a organização das demandas,  análise dos indicadores de performance, padrão de qualidade, agendamento de reuniões e eventos, além da possibilidade de contratar empresas parceiras para a solução das demandas preditivas.
 
+# Estrutura do Documento	
 
 # Tecnologias Utilizadas
 
@@ -366,9 +375,9 @@ As tecnologias utilizadas para resolver o problema e implementar sua solução f
 	  Framework com componentes de interface que une vários projetos de software, provendo uma funcionalidade. 
 - **API**:
 	  Recurso utilizado para integrar o sistema         
--**WhatsApp**:
+- **WhatsApp**:
 	  Utilizada para integrar o botão o do WhatsApp caso o usuário quisesse entrar em contato com a empresa SIP (donos do projeto)         
--**cdn.jsdelivr**:
+- **cdn.jsdelivr**:
 	  Utilizada para integrar os gráficos gerados dos chamados           
 - **Bibliotecas**:
 	  Utilizadas para realizarem alguma função na página web          
@@ -385,81 +394,45 @@ As tecnologias utilizadas para resolver o problema e implementar sua solução f
  - **Font Awesome**:
 	  Utilizado alguns ícones que foram personalizadas no CSS.
 	
-# Estrutura do Documento	
-	
-	
-
-> Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
-> problema, ou seja, implementar a sua solução. Liste todas as
-> tecnologias envolvidas, linguagens a serem utilizadas, serviços web,
-> frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-> Apresente também uma figura explicando como as tecnologias estão
-> relacionadas ou como uma interação do usuário com o sistema vai ser
-> conduzida, por onde ela passa até retornar uma resposta ao usuário.
-> 
-> Inclua os diagramas de User Flow, esboços criados pelo grupo
-> (stoyboards), além dos protótipos de telas (wireframes). Descreva cada
-> item textualmente comentando e complementando o que está apresentado
-> nas imagens.
-
 
 ## Arquitetura da solução
+Para resolver o problema e implementar a solução, o grupo adotou as seguintes linguagens: HTML, CSS e JavaScript. Além disso, foi publicado um repositório no Github e por fim o site foi publicado na internet.
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+**Diagrama de Arquitetura**
+> Diagrama de arquitetura com a interação entre os sistemas
+> ![Diagrama de arquitetura completo](imaages/../images/arq1.png)
 
-
-![Diagrama de Arquitetura SIP](https://user-images.githubusercontent.com/103376249/177440759-2ac4c9ff-205b-4c9c-8792-7bf36122310a.jpg)
-
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
-> 
-> **Exemplo do diagrama de Arquitetura**:
-> 
-> ![Exemplo de Arquitetura](images/arquitetura-exemplo.png)
-
+Toda a funcionalidade do software é realizada por meio do LocalStorage e todos os dados ficam salvos nele. O fluxo do usuário é feito a partir do login no sistema e em seguida, realizada qual função que deseja (cadastrar um chamado, marcar um evento/reunião ou enviar um feedback). Cada funcionalidade possui restrições que devem ser seguidas para serem validadas. 
 
 # Avaliação da Aplicação
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
+Após o desenvolvimento do software, é necessário e fundamental a realização de testes de usabilidade. Diante disso, segue abaixo alguns cenários de testes deste sistema.
 
 ## Plano de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+ Para a execução dos testes, foi permitido que um sindico e um morador de 2 condomínios/prédios , acessassem o software para o conhecimento como também para descrever os pontos fortes e fracos dos sistema.
 
-> Enumere quais cenários de testes foram selecionados para teste. Neste
-> tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
-> de usuários que foi escolhido para participar do teste e as
-> ferramentas utilizadas.
-> 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
+- **Teste 1:** Um dos cenários desenvolvidos neste sistema é a possibilidade de entrar na tela principal sem estar logado. O resultado esperado: exibição de uma tela informando " Você deve estar logado no sistema"
+- **Teste 2:** No menu , avalie do sistema, o formulário  Feedback do Condomínio deve ser preenchido completamente, caso contrário o botão confirmar não fica habilitado
+- **Teste 3:** O usuário síndico,no Cadastro de Chamados, tem a permissão para acessar e visualizar as chamadas através do botão Espaço Síndico
+- **Teste 4:** O usuário morador, no Cadastro de Chamados,tem permissão para o preenchimentos da solicitação de serviços
+- **Teste 5:** No Agendamento de Eventos, qualquer usuário pode através do botão Criar registrar e agendar  a data de um possível evento no prédio/condomínio.
+- **Teste 6:** Em indicação de empresas, qualquer usuário pode preencher o formulário e  acionar todos os botões dispostos na tela
+- **Teste 7:** Na tela inicial , após o acesso do usuário, na parte inferior esquerda da tela, pode-se acionar o Whatsapp do condomínio/prédio , através do ícone deste software.
 
 ## Registros de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
-
+Em todos os testes descritos anteriormente, verificou-se o satisfatório funcionamento do sistema.
+Entretanto, verificou-se pontos que podem ser melhorados.
+Em uma próxima versão do sistema, pode-se:
+-  Criar uma funcionalidade onde o síndico visualiza, por andar, todos os equipamentos de segurança.
+-  Também pode-se, por questão de segurança, anexar uma planta ou animação do prédio.
+-  Adicionar grupos de permissão para usuário no sistema, síndico terá as permissões de administrador e morador de usuário do sistema
+Pontos fracos:A responsividade da Tela de cadastro deve ser melhorado.
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados
-> no desenvolvimento do trabalho.
-> 
-> **Links Úteis**:
-> - [Trello](https://trello.com/b/KXKGzARM/quadro-kanban)
-> - [Miro]( https://miro.com/app/board/uXjVOA3Il6Y=/)
-  - [Overleaf](https://www.overleaf.com/project/62c35ab2ef5f5e5bf09aa363)
-  - [GitHub](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-
-02-grupo-5-sip/blob/master/docs/relatorio/Relatorio)
+- [Trello](https://trello.com/b/KXKGzARM/quadro-kanban)
+- [Miro]( https://miro.com/app/board/uXjVOA3Il6Y=/)
+- [Overleaf](https://www.overleaf.com/project/62c35ab2ef5f5e5bf09aa363)
+- [GitHub](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-02-grupo-5-sip/blob/master/docs/relatorio/Relatorio)
