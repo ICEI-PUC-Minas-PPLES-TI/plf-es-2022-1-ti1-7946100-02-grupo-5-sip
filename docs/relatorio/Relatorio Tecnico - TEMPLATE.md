@@ -38,13 +38,11 @@ Os membros do grupo são:
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
-- [**############## SPRINT 1 ACABA AQUI #############**](#-sprint-1-acaba-aqui-)
 - [Projeto da Solução](#projeto-da-solução)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
   - [Arquitetura da solução](#arquitetura-da-solução)
 - [Avaliação da Aplicação](#avaliação-da-aplicação)
   - [Plano de Testes](#plano-de-testes)
-  - [Ferramentas de Testes (Opcional)](#ferramentas-de-testes-opcional)
   - [Registros de Testes](#registros-de-testes)
 - [Referências](#referências)
 
@@ -172,27 +170,28 @@ Acesso ao sistema através do login e o cadastro para o acesso o software
  2. **Tela 2 - Principal**
 >  Tela principal que apresenta todas as funcionalidades do programa
 
-> ![Tela de Principal](imaages/../images/imagem2.JPG)
+> ![Tela de Principal](imaages/../images/imagem2.png)
 
-3. **Tela 3 - Cadastro**
-
+3. **Tela 3 - Abertura de chamados**
+Tela onde o usuário preenche o formulário e faz a solicitação de serviços 
 
 > ![Tela de Cadastro](imaages/../images/imagem3.png)
 
 4. **Tela 4 - Agendamento de Eventos**
-
+Tela para agendamento de reuniões e eventos no prédio através do calendário
 > ![Tela Principal](imaages/../images/imagem4.png)
 
 5. **Tela 5 - Monitoramento de Chamados**
-
+Tela para monitorar todos os chamados que já foram abertos no sistema e armazenados no LocalStorage, permite visualizar chamados separados por Status e por categoria
 
 > ![Tela do mapa predial](imaages/../images/imagem5.png)
 
 6. **Tela 6 - Formulário de Feedback**
+Tela para permitir que o usuário abra um feedback para avaliar seu condomínio e a resolução de um chamado
 > ![Tela de como agir em emergências](imaages/../images/imagem6.png)
 
 7. **Tela 7 - Cadastro de empresa**
-
+Tela para realizar a indicação de empresas para auxiliar na resolução dos chamados
 > ![Tela de gestão de melhorias](imaages/../images/imagem7.png)
 
 # Metodologia
