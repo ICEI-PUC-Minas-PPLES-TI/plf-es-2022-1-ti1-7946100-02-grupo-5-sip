@@ -380,7 +380,7 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 
 SIP é uma ferramenta que visa organizar e otimizar os problemas cotidianos de um prédio/condomínio para que tanto os moradores e o síndico consigam gerenciar as principais demandas e necessidades destes espaços. O sistema SIP promete a organização das demandas,  análise dos indicadores de performance, padrão de qualidade, agendamento de reuniões e eventos, além da possibilidade de contratar empresas parceiras para a solução das demandas preditivas.
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 As tecnologias utilizadas para resolver o problema e implementar sua solução foram: 
 
@@ -420,6 +420,11 @@ As tecnologias utilizadas para resolver o problema e implementar sua solução f
  
  -Font Awesome:
 	Utilizado alguns ícones que foram personalizadas no CSS.
+	
+	
+# Estrutura do Documento	
+	
+	
 
 > Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
 > problema, ou seja, implementar a sua solução. Liste todas as
