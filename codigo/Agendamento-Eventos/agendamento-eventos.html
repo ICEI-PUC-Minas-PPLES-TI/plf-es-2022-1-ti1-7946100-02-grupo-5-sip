@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="../../../codigo/Pagina-Inicial/pagina-inicial.html">SIP: Chamados Prediais</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link"
+                        href="../../../codigo/Cadastro-Chamados-Feedback-Usuario/cadastrochamado.html">Cadastro de
+                        Chamados<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="../../../codigo/Agendamento-Eventos/agendamento-eventos.html">Agendamento Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="../../../codigo/Grafico-Quantidade-de-Chamados-Abertos/graficos.html">Chamados em
+                        Aberto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../codigo/Formulario-Avaliacao/formulario-avaliacao.html">Avalie
+                        o Sistema</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="../../../codigo/Indicacao-de-Empresa/indicacao-de-empresa.html">Cadastro de
+                        Empresa</a>
+                </li>
+                <li id="btnLogOut">
+                    <div type="button" id="btnLogOut" onclick="efetuarLogOut()">
+                        <i class="fa fa-sign-out fa_custom fa-2x" style="color:white"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="caixaBotao" onclick="estadoBotao()" class="botaoBox">
+            <div class="menu"> + Criar</div>
+            <div id="meuMenu" class="conteudo-menu">
+                <a onclick="novoEvento()" href="#">Evento</a>
+                <a onclick="novaReuniao()" href="#">Reunião</a>
+                <input type="text" class="form-control" id="inputDescricao" required placeholder="Título...">
+            </div>
+        </div>
+        <div class="calendario">
+            <div class="mês">
+                <i class="fas fa-angle-left anterior">
+                    <!--Setinha para o mes anterior-->
+                </i>
+                <div class="data">
+                    <h1>Junho</h1>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right proximo"></i>
+                <!--Setinha para o proximo mes-->
+            </div>
+            <div class="diasDaSemana">
+                <div>D</div>
+                <div>S</div>
+                <div>T</div>
+                <div>Q</div>
+                <div>Q</div>
+                <div>S</div>
+                <div>S</div>
+            </div>
+            <div onclick="novaData(event)" class="dias"></div>
+        </div>
+    </div>
+    <script src="moment.js"></script>
+    <script src="javaScript/calendario.js"></script>
+    <script src="../../codigo/Pagina-Inicial/javaScript/logOut.js"></script>
+</body>
+
+</html>

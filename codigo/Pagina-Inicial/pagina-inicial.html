@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <title>Página Inicial</title>
   <meta charset="utf-8">
@@ -10,91 +9,108 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/pagina-inicial.css" />
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="../../../codigo/Pagina-Inicial/pagina-inicial.html">SIP: Chamados Prediais</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link"
+            href="../../../codigo/Cadastro-Chamados-Feedback-Usuario/cadastrochamado.html">Cadastro de Chamados<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../codigo/Agendamento-Eventos/agendamento-eventos.html">Agendamento
+            Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../codigo/Grafico-Quantidade-de-Chamados-Abertos/graficos.html">Chamados
+            em Aberto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../codigo/Formulario-Avaliacao/formulario-avaliacao.html">Avalie o
+            Sistema</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../codigo/Indicacao-de-Empresa/indicacao-de-empresa.html">Cadastro de
+            Empresa</a>
+        </li>
+        <li id="btnLogOut">
+          <div type="button" id="btnLogOut" onclick="efetuarLogOut()">
+            <i class="fa fa-sign-out fa_custom fa-2x" style="color:white"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <a href="https://web.whatsapp.com/" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
 z-index:1000;" target="_blank">
     <i style="margin-top:16px" class="fa fa-whatsapp"></i>
   </a>
-
-  <div id="wrapper">
-    <header>
-      <div class="container">
-        <img src="images/predios.png" class="mx-auto d-block" style="width:80%">
-      </div>
-    </header>
-
-    <nav>
-      <a href="/" id="logozinha">SIP: Building Security</a>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-list">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Segurança</a></li>
-        <li><a href="#">Correios</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Emergências</a></li>
-        <div class="btnSignOut">
-          <li id="btnLogOut">
-            <button type="button" id="btnLogOut" onclick="efetuarLogOut()">
-              <i class="fa fa-sign-out fa_custom fa-2x"></i>
-            </button>
-          </li>
-        </div>
-      </ul>
-    </nav>
-
     <div class="retangulo">
       <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
+        <a href="../../../codigo/Cadastro-Chamados-Feedback-Usuario/cadastrochamado.html">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Abra um Chamado!</h1>
+              <p>Abra um chamado e relate um problema que está enfrentando </p>
+              <p>Informações</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
+            </div>
           </div>
-          <div class="flip-card-back">
-            <h1>Informações de segurança</h1>
-            <p>Se informe aqui sobre sua segurança </p>
-            <p>Informações</p>
-          </div>
-        </div>
+        </a>
       </div>
-
       <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
+        <a href="../../../codigo/Agendamento-Eventos/agendamento-eventos.html">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Agende um Evento!</h1>
+              <p>Agende aqui sua reunião, reserva do salão e outros eventos!</p>
+              <p>Informações</p>
+            </div>
+            <div class="flip-card-back2">
+              <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
+            </div>
           </div>
-          <div class="flip-card-back2">
-            <h1>Informações de segurança</h1>
-            <p>Se informe aqui sobre sua segurança </p>
-            <p>Informações</p>
-          </div>
-        </div>
+        </a>
       </div>
-
       <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
+        <a href="../../../codigo/Indicacao-de-Empresa/indicacao-de-empresa.html">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Indique uma Empresa!</h1>
+              <p>Indique aqui empresas para ajudar a solucionar os problemas do condomínio</p>
+              <p>Informações</p>
+            </div>
+            <div class="flip-card-back3">
+              <img src="images/Avatar.png" alt="Avatar" width="300px" height="300px">
+            </div>
           </div>
-          <div class="flip-card-back3">
-            <h1>Informações de segurança</h1>
-            <p>Se informe aqui sobre sua segurança </p>
-            <p>Informações</p>
-          </div>
-        </div>
+        </a>
       </div>
-
     </div>
-
-  </div>
   <script src="javaScript/mobile-navbar.js"></script>
   <script src="javaScript/logOut.js"></script>
 </body>
-
 </html>

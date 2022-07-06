@@ -1,0 +1,69 @@
+.bg-dark {
+    background-color: #23232e !important;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+label {
+    font-weight: bolder;
+}
+
+::placeholder {
+    color: lightskyblue !important;
+    opacity: 3;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: lightskyblue !important;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: lightskyblue !important;
+    opacity: 3;
+}
+
+h1 {
+    text-align: center;
+}
+
+#msg {
+    height: 60px;
+}
+
+#grid-chamados tbody {
+    cursor: pointer;
+}
+
+.btnClear2 {
+    display: inline-block;
+}
+
+.container {
+    width: 70%;
+}
+
+@media screen and (max-width:1282px) {
+    .container {
+        width: 50%;
+    }
+
+    .form-group row {
+        width: 80%;
+
+    }
+}
