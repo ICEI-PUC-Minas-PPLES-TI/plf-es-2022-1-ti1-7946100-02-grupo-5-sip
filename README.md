@@ -19,4 +19,5 @@
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Para rodar a solução localmente será necessário apenas clonar o repostiório e baixar a extensão do Live Server para ver o código funcionando em tempo real.
+O pré-requisito para começar a mexer no sistema é efetuar um cadastro e realizar o login.
