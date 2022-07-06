@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+* {
+  margin: 10;
+  padding: 15;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-image: linear-gradient(-45deg, #000000, #BFBFBF);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+/* Fontes do Formulário */
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+button {
+  background-color: #23232e;
+  color: white;
+}
+p,
+label,
+input,
+textarea {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+}
+/* Card Formulário */
+main{
+width: 100%;
+}
+.container {
+  display: flex;
+  background-color: white;
+  padding: 50px;
+  border-radius: 40px;
+  width: 540px;
+  margin-top: 40px;
+}
+/* Título do Formulário */
+header {
+  display: flex;
+  margin: 15px;
+}
+hgroup {
+  margin: 0 auto;
+  text-align: center;
+}
+/* Opções do formulário */
+.container {
+  border: none;
+}
+.input {
+  padding: 5px 0px;
+}
+.check {
+  display: block;
+}
+.btn-submit {
+  margin: 10px 0px;
+  padding: 5px;
+  float: right;
+}
+.bg-dark{
+  background-color: #23232e !important;
+}
+.navbar-light .navbar-brand{
+  color: white;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+}
+@media screen and (max-width:660px) {
+  .container {
+    display: flex;
+    background-color: white;
+    padding: 16px;
+    border-radius: 14px;
+    width: 90%;
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,76 @@
+body {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #23232e;
+    font-size: 35px;
+    font-weight: 100;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    border: 0px;
+    display: grid;
+    grid-template-areas: "item item";
+    grid-gap: 20px;
+    padding: 0px 20px 0px 20px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.item {
+    max-width: 520px;
+    min-width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    grid-area: "item";
+    background-color: rgb(235, 235, 235);
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #23232e;
+    font-size: large;
+    text-align: center;
+    margin: 3%;
+}
+
+@media (max-width: 1078px) {
+    .container {
+        grid-template-areas: "item";
+    }
+}
+
+@media (max-width: 532px) {
+    .container {
+        grid-template-areas: "item";
+    }
+
+    .item {
+        max-width: 370px;
+        min-width: 270px;
+        max-height: 550px;
+        min-height: 400px;
+    }
+}
+
+.bg-dark{
+    background-color: #23232e !important;
+  }
+  
+  .navbar-light .navbar-brand{
+    color: white;
+  }
+  
+  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: white;
+  }
+  
+  .navbar-light .navbar-nav .nav-link{
+    color: white;
+  }
