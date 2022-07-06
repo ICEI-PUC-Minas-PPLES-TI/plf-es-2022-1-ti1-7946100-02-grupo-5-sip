@@ -404,6 +404,10 @@ Para resolver o problema e implementar a solução, o grupo adotou as seguintes 
 
 Toda a funcionalidade do software é realizada por meio do LocalStorage e todos os dados ficam salvos nele. O fluxo do usuário é feito a partir do login no sistema e em seguida, realizada qual função que deseja (cadastrar um chamado, marcar um evento/reunião ou enviar um feedback). Cada funcionalidade possui restrições que devem ser seguidas para serem validadas. 
 
+**UserFlow**
+A seguir imagem indicando todo o userFlow do sistema com a conexão e navegação entre as páginas
+> ![UserFlow](imaages/../images/user-flow.jpg)
+
 # Avaliação da Aplicação
 
 Após o desenvolvimento do software, é necessário e fundamental a realização de testes de usabilidade. Diante disso, segue abaixo alguns cenários de testes deste sistema.
