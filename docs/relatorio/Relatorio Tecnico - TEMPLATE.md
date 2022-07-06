@@ -10,13 +10,10 @@
 ## Participantes
 
 Os membros do grupo são: 
-- Anthony Luan da Silva Santos
 - Bárbara Mattioly Andrade
 - Laura Enísia Rodrigues Melo
 - Marco Antônio Miranda Ferreira
-- Naára Leite Garção
 - Pedro Henrique Pimenta Ribeiro
-- Raul Phelipe Salles de Souza
 
 # Estrutura do Documento
 
@@ -57,30 +54,23 @@ Os membros do grupo são:
 
 ## Problema
 
-Viver e morar em um prédio(residencial) apresenta diversas vantagens. Entretanto, a questão da segurança é um tópico importante neste contexto.
-
-Diversos prédios não apresentam uma estrutura de organização da segurança. Em muitos casos, os moradores e funcionários desconhecem o manuseio de equipamentos de segurança, além de não possuírem conhecimento de primeiros socorros e não saberem como agir em situações de emergência(assalto, roubo, desastre). 
+O problema principal é a falta de organização e gestão das demandas preditivas. Os síndicos recebem várias reclamações e queixas de moradores e funcionários de problemas recorrentes no edifício. Com a alta demanda, é inviável administrar e categorizar quais são os problemas atuais, os que já foram solucionados e os que estão em andamento. Além disso, a falta de tempo em gerir todos os incidentes e procurar empresas que solucionam determinados problemas é um fator que insatisfaz o síndico e impacta no tempo de solução das ocorrências.
 
 
 ## Objetivos
 
-O objetivo deste trabalho é desenvolver uma aplicação web que permita otimizar e gerenciar a segurança dos moradores de um prédio.
+ O objetivo desse trabalho é desenvolver uma aplicação Web que permita otimizar e gerenciar os problemas diários que os moradores e funcionários de um prédio/condomínio sofrem. Além disso, possui o intuito de auxiliar o síndico a priorizar demandas de acordo com sua importância e garantir a melhoria contínua e a qualidade das demandas preditivas.
 
 
 ## Justificativa
 
-Atualmente, percebe-se que as empresas de segurança predial apenas vendem equipamentos de segurança  e prestam orientações aos condomínios. 
-
-Até o momento, não existe uma solução de aplicativo web ou software para gerenciar e melhorar  a segurança de um prédio. 
-
-Cabe ressaltar que, com o aumento da violência (problema social), existe uma grande demanda para minimizar os seus efeitos no cotidiano das pessoas.
+ O projeto tem como justificativa solucionar os problemas do público-alvo de modo que realize as demandas preditivas de modo ágil e organizado, favorecendo todos os indivíduos.
 
 
 ## Público-Alvo
 
-O público  alvo deste trabalho são os frequentadores de um prédio residencial: 
+O público  alvo deste trabalho são os residentes de um prédio ou condomínio: 
 - Moradores;
-- Funcionários;
 - Síndicos;
 
 # Especificações do Projeto
@@ -118,14 +108,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-| **Lilian**  | Possuir funções de administradora do sistema         | possa enviar o código do prédio para os moradores se conectarem ao sistema do edifício e tenha permissão para editar os dados em tela, como adicionar os equipamentos de segurança por andar               |
-| **Lilian**       | Cadastrar os equipamentos de segurança existentes em cada andar e as respectivas datas de revisão de cada um dos equipamentos, tal qual seu lote         | Tornar visível aos moradores os equipamentos de segurança que existem em cada andar, para saberem onde buscar em caso de alguma situação de emergência no prédio, assim como dar transparência a data de revisão de cada um desses equipamentos |
-| **Lilian**  | Adicionar a data de revisão de cada um dos equipamentos de segurança presentes no prédio           | Manter um controle e fornecer transparência a todos os moradores, para que se sintam seguro com a revisão dos equipamentos em dia               |
-| **João Wagner**       | Saber todos os equipamentos de segurança presentes no prédio                 | Que eu saiba o que procurar em caso de emergências |
-| **João Wagner**  | Saber como agir e para quem ligar, em casos de emergência no prédio          | Ser capaz de manter a calma e agir com segurança para me salvar e salvar os outros em caso de emergências            |
-| **João Wagner**       | Dar sugestões de melhoria para o sistema e indicar empresas e startups para realizar parcerias com o sistema                | Obter a melhor solução possível para que utilize juntamente aos moradores do meu prédio |
-| **Antônio Carlos**  | Saber todos os equipamentos de segurança presentes no prédio em que trabalho           | Para que possa saber qual procurar em caso de emergências e auxiliar os moradores               |
-| **Antônio Carlos**       | Saber como agir e para quem ligar, em casos de emergência no prédio                | Ser capaz de agir com segurança para me salvar e ajudar a todos os moradores do prédio em caso de emergências |
+| **Síndico do prédio**  | Administrar as demandas do condomínio, feitas pelos moradores.          | que possa dar andamento em todos os chamados
+| **Síndico do prédio**    | De sugestão de empresas que solucionam problemas das demandas preditivas         | garantir a maior qualidade possível dos chamados |
+| **Síndico do prédio**  | preciso registrar todos os eventos e reuniões marcadas pelos inquilinos           | que não haja conflito de eventos nos espaços comuns do prédio  |
+| **Síndico do prédio**       | preciso saber o feedback dos moradores acerca dos trabalhos e demandas realizadas no condomínio      | que eu possa saber em qual ponto melhorar |
+| **Morador do Prédio**  | saber como está a situação dos problemas do prédio          | para ter visibilidade de como está a solução do meu problema           |
+
 
 ## Requisitos
 
@@ -135,27 +123,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-01| O site deverá apresentar na tela inicial, os meios de comunicação para receber propostas para contratação de nosso serviço | ALTA | 
-|RF-02| O site deverá apresentar na tela inicial um texto descrevendo sobre o que é o projeto   | MÉDIA |
-|RF-03| O site deverá apresentar na tela inicial um botão com o ícone do whatsapp que apresentará o link para entrar no grupo de whatsapp do prédio   | ALTA |
-|RF-04| O site deverá apresentar para cada andar um campo na tela de mapa de Equipamentos de Segurança do Prédio informando os equipamentos de segurança do prédio   | ALTA |
-|RF-05| O site deve permitir ao usuário visualizar a data de revisão dos equipamentos de segurança do prédio e o lote a que pertencem   | MÉDIA |
-|RF-06| O site deverá permitir ao administrador adicionar e remover equipamentos de segurança por andar  | ALTA |
-|RF-07| O site deverá apresentar uma tela com sugestões de melhoria dadas pelo usuário para melhorar o sistema, assim como, sugestões de empresas para realizar parceria | BAIXA |
-|RF-08|O site deverá apresentar uma tela com alguns tipos de emergência e um vídeo e texto descritivo exemplificando como agir | ALTA |
-|RF-09|O site deverá apresentar na tela os telefones de emergência | MÉDIA |
-
-
+|RF-01|  O site deverá apresentar na tela inicial um botão com o ícone do Whatsapp que irá linkar diretamente para o contato da empresa SIP. | BAIXA | 
+|RF-02|  O site deverá apresentar uma tela com login (e-mail e senha). Caso o usuário não seja cadastrado, é necessário o cadastro da conta. Após o usuário executar seu login, acessa a tela principal.   | ALTA |
+|RF-03| Ao preencher o login, existe o acesso para o morador ou síndico. | MÉDIA |
+|RF-04| No menu, deve existir a opção Cadastro de Chamado - Solicitação de Serviços, possibilitando o morador/síndico preencher um formulário no qual é inserido o motivo e a categoria do problema do apartamento/condomínio, e também, informado os dados pessoais do solicitante.   | ALTA |
+|RF-05| No menu, agendamento de eventos, o morador/síndico pode agendar algum evento no espaço comum do condomínio (ex: salão de festas), e também marcar uma reunião (ex: reunião de moradores).   | ALTA |
+|RF-06| No menu, chamados em Abertos, o usuário acompanha/monitora através de gráficos os chamados  | MÉDIA |
+|RF-07| No menu, Indicação de Empresas, o usuário, por meio de um formulário, cadastra e indica uma empresa para ser parceira do SIP. Com isso, há a possibilidade da empresa, futuramente, ser contatada e realizar algum serviço que o condomínio necessite. | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-01| O site deverá apresentar os grupos de Administrador e Usuário na hora do login, para que apenas as pessoas responsáveis tenham acesso a visualizar determinadas telas e clicar em determinados botões | ALTA | 
-|RNF-02| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku);  |  ALTA |
-|RNF-03| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku);  |  ALTA |
-|RNF-04| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge)  |  ALTA |
-|RNF-05| O site deverá apresentar um componente para que o usuário avalie o que achou do sistema  |  BAIXA |
+|RNF-01| O site deverá apresentar os grupos de Administrador e Usuário na parte do login (administrador: síndico | usuário: morador), para que apenas as pessoas responsáveis tenham acesso ao visualizar determinadas telas e clicar em determinados botões. | MÉDIA | 
+|RNF-02|  O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku)  |  ALTA |
+|RNF-03| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge)  |  ALTA |
 
 ## Restrições
 
@@ -163,10 +145,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                                                                               |
 |--|---------------------------------------------------------------------------------------------------------|
-|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 13/06/2022. |
+|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 05/07/2022. |
 |02| Não pode ser desenvolvido um módulo de backend, apenas tecnologias básicas da Web no FrontEnd           |
 |03| A equipe não pode subcontratar o desenvolvimento do trabalho                                            |
-
+|04| Estar publicado na WEB                         |
+|05| Possuir um smartphone ou notebook com internet para poder acessar o software.                         |
+|05| Realizar um cadastro no sistema para poder acessar todas as funcionalidades que o programa possui                       |
 
 # Projeto de Interface
 
@@ -312,13 +296,10 @@ A equipe está organizada da seguinte forma:
 - Scrum Master: Bárbara Mattioly
 - Product Owner: Laura Enísia
 - Equipe de desenvolvimento: 
-  - Anthony
   - Bárbara
   - Laura
   - Marco
   - Pedro 
-  - Raul
-  - Naára
 
 Para organização e distribuição das tarefas do projeto, a equipe utilizou o Discord com canais de texto para definir prazos e projetos a serem entregues. 
 
@@ -358,68 +339,51 @@ A metodologia adotada pelo grupo referente às ferramentas utilizadas para a rea
 
 ## Controle de Versão
 
-**O controle de versão do código no Git será definido com mais detalhes na sprint 2.**
-
 A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [Github](https://github.com) foi utilizado para hospedagem do repositório `upstream`.
 
 O projeto segue a seguinte convenção para o nome de branchs:
 - `master`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `funcionalidade-sendo-desenvolvida`: cada membro criou uma branch para desenvolver e publicar sua funcionalidade
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas: 
-- `bugfix`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-# **############## SPRINT 1 ACABA AQUI #############**
-
+Após o término do desenvolvimento, foi aberto um Pull Request da branch onde estava o desenvolvimento, para a master
 
 # Projeto da Solução
 
 SIP é uma ferramenta que visa organizar e otimizar os problemas cotidianos de um prédio/condomínio para que tanto os moradores e o síndico consigam gerenciar as principais demandas e necessidades destes espaços. O sistema SIP promete a organização das demandas,  análise dos indicadores de performance, padrão de qualidade, agendamento de reuniões e eventos, além da possibilidade de contratar empresas parceiras para a solução das demandas preditivas.
 
+
 # Tecnologias Utilizadas
 
 As tecnologias utilizadas para resolver o problema e implementar sua solução foram: 
 
- - Linguagem HTML:
-            Linguagem utilizada para a construção das páginas do site.
- - Linguagem CSS:
-             Linguagem utilizada para estilizar e formatar as páginas do site.
- - Linguagem JavaScript:
-             Linguagem utilizada para implementar itens de modo dinâmico nas páginas do site.
- - Bootstrap:
-	Framework com componentes de interface que une vários projetos de software, provendo uma funcionalidade. 
- - API:
-	Recurso utilizado para integrar o sistema 
-            
- 	-WhatsApp:
-	Utilizada para integrar o botão o do WhatsApp caso o usuário quisesse entrar em contato com a empresa SIP (donos do projeto)
-             
-	-cdn.jsdelivr:
-	Utilizada para integrar os gráficos gerados dos chamados
-             
- - Bibliotecas:
-	Utilizadas para realizarem alguma função na página web
-            
- - JQuery:
-	Utilizado para gerenciar os eventos, as animações e as interações Ajax. 
-            
- - Chart:
- 	para gerar gráficos integrados do total de demandas registradas no chamado, de acordo com o total de chamados separados por categoria
-	
- - AJAX:
-	Combinação de várias tecnologias para permitir aplicações interativas 
- - JASON:
-	    Utilizado para a troca de dados pela Web. 
- - LocalStorage:
- 	Utilizado para a troca de dados pela Web. Ele oferece um armazenamento permanente de dados e que podem ser acessados a partir de qualquer janela do site.
- 
- - Font Awesome:
-	Utilizado alguns ícones que foram personalizadas no CSS.
-	
+- **Linguagem HTML**:
+     Linguagem utilizada para a construção das páginas do site.
+- **Linguagem CSS**:
+     Linguagem utilizada para estilizar e formatar as páginas do site.
+- **Linguagem JavaScript**:
+     Linguagem utilizada para implementar itens de modo dinâmico nas páginas do site.
+- **Bootstrap**:
+	  Framework com componentes de interface que une vários projetos de software, provendo uma funcionalidade. 
+- **API**:
+	  Recurso utilizado para integrar o sistema         
+-**WhatsApp**:
+	  Utilizada para integrar o botão o do WhatsApp caso o usuário quisesse entrar em contato com a empresa SIP (donos do projeto)         
+-**cdn.jsdelivr**:
+	  Utilizada para integrar os gráficos gerados dos chamados           
+- **Bibliotecas**:
+	  Utilizadas para realizarem alguma função na página web          
+ - **JQuery**:
+	  Utilizado para gerenciar os eventos, as animações e as interações Ajax.          
+ - **Chart**:
+ 	  Para gerar gráficos integrados do total de demandas registradas no chamado, de acordo com o total de chamados separados por categoria
+ - **AJAX**:
+	  Combinação de várias tecnologias para permitir aplicações interativas 
+ - **JSON**:
+	  Utilizado para a troca de dados pela Web. 
+ - **LocalStorage**:
+ 	  Utilizado para a troca de dados pela Web. Ele oferece um armazenamento permanente de dados e que podem ser acessados a partir de qualquer janela do site.
+ - **Font Awesome**:
+	  Utilizado alguns ícones que foram personalizadas no CSS.
 	
 # Estrutura do Documento	
 	
@@ -476,16 +440,6 @@ As tecnologias utilizadas para resolver o problema e implementar sua solução f
 > - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
 > -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
 
-## Ferramentas de Testes (Opcional)
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
 ## Registros de Testes
 
 ......  COLOQUE AQUI O SEU TEXTO ......
@@ -504,5 +458,8 @@ As tecnologias utilizadas para resolver o problema e implementar sua solução f
 > no desenvolvimento do trabalho.
 > 
 > **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+> - [Trello](https://trello.com/b/KXKGzARM/quadro-kanban)
+> - [Miro]( https://miro.com/app/board/uXjVOA3Il6Y=/)
+  - [Overleaf](https://www.overleaf.com/project/62c35ab2ef5f5e5bf09aa363)
+  - [GitHub](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-
+02-grupo-5-sip/blob/master/docs/relatorio/Relatorio)
