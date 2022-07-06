@@ -384,15 +384,15 @@ SIP é uma ferramenta que visa organizar e otimizar os problemas cotidianos de u
 
 As tecnologias utilizadas para resolver o problema e implementar sua solução foram: 
 
- -Linguagem HTML:
+ - Linguagem HTML:
             Linguagem utilizada para a construção das páginas do site.
- -Linguagem CSS:
+ - Linguagem CSS:
              Linguagem utilizada para estilizar e formatar as páginas do site.
- -Linguagem JavaScript:
+ - Linguagem JavaScript:
              Linguagem utilizada para implementar itens de modo dinâmico nas páginas do site.
- -Bootstrap:
+ - Bootstrap:
 	Framework com componentes de interface que une vários projetos de software, provendo uma funcionalidade. 
- -API:
+ - API:
 	Recurso utilizado para integrar o sistema 
             
  	-WhatsApp:
@@ -401,24 +401,24 @@ As tecnologias utilizadas para resolver o problema e implementar sua solução f
 	-cdn.jsdelivr:
 	Utilizada para integrar os gráficos gerados dos chamados
              
- -Bibliotecas:
+ - Bibliotecas:
 	Utilizadas para realizarem alguma função na página web
             
- -JQuery:
+ - JQuery:
 	Utilizado para gerenciar os eventos, as animações e as interações Ajax. 
             
- -Chart:
+ - Chart:
  	para gerar gráficos integrados do total de demandas registradas no chamado, de acordo com o total de chamados separados por categoria
 	
- -AJAX:
+ - AJAX:
 	Combinação de várias tecnologias para permitir aplicações interativas 
- -JASON:
+ - JASON:
  
 	    Utilizado para a troca de dados pela Web. 
- -LocalStorage:
+ - LocalStorage:
  	Utilizado para a troca de dados pela Web. Ele oferece um armazenamento permanente de dados e que podem ser acessados a partir de qualquer janela do site.
  
- -Font Awesome:
+ - Font Awesome:
 	Utilizado alguns ícones que foram personalizadas no CSS.
 	
 	
