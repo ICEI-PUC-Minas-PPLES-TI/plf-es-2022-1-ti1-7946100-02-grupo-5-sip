@@ -164,99 +164,36 @@ Link de acesso ao protótipo interativo: https://www.figma.com/file/96nd2RS4AxKH
 
 ## Wireframes
 
-1. **Tela 1 - Inicial**
->  Tela Inicial que apresenta os principais meios de atuação possíveis através do nosso App. São apresentados os botões para as páginas de:
->    - Botão de Login;
->    - Botão de Cadastro;
->    - Título;
->    - Descrição do Sistema;
->    - Perfis cadastrados;
->    - Reclame aqui (Fale conosco);
->    - E-mail de contato.
-
-> ![Tela Inicial](imaages/../images/img1.png)
+1. **Tela 1 - Login**
+>  Tela Inicial: Login do usuário
+Acesso ao sistema através do login e o cadastro para o acesso o software
+> ![Tela Login](imaages/../images/imagem1.png)
  
- 2. **Tela 2 - Login**
->  Tela de Login apresenta os espaços para inserir o nome de usuário, senha, logo e os botões de Entrar e o de Cadastrar.
+ 2. **Tela 2 - Principal**
+>  Tela principal que apresenta todas as funcionalidades do programa
 
-> ![Tela de login](imaages/../images/img2.JPG)
+> ![Tela de Principal](imaages/../images/imagem2.JPG)
 
 3. **Tela 3 - Cadastro**
->  Tela de Cadastro apresenta os espaços de:
->    - Nome completo;
->    - E-mail;
->    - Data de nascimento;
->    - Nome de usuário;
->    - Senha;
->    - Opção de concordância com os termos de uso do SIP;
->    - Botão de cadastro como síndico;
->    - Botão de cadastro como usuário.
 
-> ![Tela de Cadastro](imaages/../images/img3.png)
 
-3.1. **Tela 3.1 - Síndico**
->  Tela em que se é selecionado o edifício e o código de acesso do síndico do prédio para efetuar o cadastro.
+> ![Tela de Cadastro](imaages/../images/imagem3.png)
 
-> ![Tela para código de acesso do síndico](imaages/../images/img4.png)
+4. **Tela 4 - Agendamento de Eventos**
 
-3.2 **Tela 3.2 - Confirmação de Cadastro**
->  Tela onde se é informado a condição do cadastro e é instruída a confirmação da mesma na caixa de entrada do e-mail do usuário e o botão de iniciar
+> ![Tela Principal](imaages/../images/imagem4.png)
 
-> ![Tela de Confirmação de Cadastro](imaages/../images/img5.png)
+5. **Tela 5 - Monitoramento de Chamados**
 
-4. **Tela 4 - Principal**
->  Tela onde se encontram o Logo, botões de:
->    - Mapa do prédio;
->    - Como agir em emergências;
->    - Gestão de melhorias;
->    - Direcionamento para o grupo do Whatsapp do prédio;
->    - Avaliações do sistema;
->    - Informações sobre o projeto.
 
-> ![Tela Principal](imaages/../images/img6.png)
+> ![Tela do mapa predial](imaages/../images/imagem5.png)
 
-5. **Tela 5 - Mapa Predial**
->  Tela em que se encontram a descrição, localização e instrução das datas de revisão e vistoria dos equipamentos presentes em cada andar, além dos botões de:
->    - Mapa do prédio;
->    - Como agir em emergências;
->    - Gestão de melhorias.
+6. **Tela 6 - Formulário de Feedback**
+> ![Tela de como agir em emergências](imaages/../images/imagem6.png)
 
-> ![Tela do mapa predial](imaages/../images/img7.png)
+7. **Tela 7 - Cadastro de empresa**
 
-5.1. **Tela 5.1 - Data de Revisão e Lote do Equipamento**
->  Tela em que se é apresentado o nome do equipamento, data última revisão, data da próxima revisão e do lote.
-
-> ![Tela de date de revisão e lote do equipamento](imaages/../images/img8.png)
-
-5.2 **Tela 5.2 - Adição de Equipamentos Por Andar**
->  Tela em que se é informado o andar do edifício e quais são os equipamentos de segurança a serem adicionados naquele andar
-
-> ![Tela de adição de equipamentos](imaages/../images/img9.png)
-
-5.3 **Tela 5.3 - Edição de Equipamentos Por Andar**
->  Tela em que são efetuadas as mudanças dos dados de determinados equipamentos de segurança, assim como extintores e câmeras de segurança.
-
-> ![Tela de Edição de equipamentos](imaages/../images/img10.png)
-
-6. **Tela 6 - Como Agir em Emergências**
->  Tela em que são apresentados botões para os diferentes tipos de emergências possíveis, juntamente com os números de telefone mais úteis para ocasiões especiais.
-
-> ![Tela de como agir em emergências](imaages/../images/img11.png)
-
-6.1. **Tela 6.1 - Item Como Agir em Emergências**
->  Tela onde se é apresentado um problema, em que se é fornecido maneiras de ação para atuar em cada problema específico, com conteúdos entregues em forma de vídeo e texto visando instruir o usuário com conhecimento útil para tal ocasião.
-
-> ![Item de descrição de como agir em emergências](imaages/../images/img11.png)
-
-7. **Tela 7 - Gestão de Melhorias**
->  Tela onde estão presentes espaços para a sugestão de ideias para melhoria, botão do reclame aqui e o botão para a indicação e sugestão de empresas e startups que estejam dispostas a atuarem junto ao nosso programa e a tecer parcerias e patrocínios juntamente aos edifícios usuários do nosso sistema.
-
-> ![Tela de gestão de melhorias](imaages/../images/img12.png)
-
-8. **Tela 8 - Sobre a Empresa**
->  Tela onde será impresso todas as informações sobre a nossa empresa, os contribuidores nossas parcerias e patrocínios.
-
-> ![Tela sobre a empresa](imaages/../images/img13.png)
+> ![Tela de gestão de melhorias](imaages/../images/imagem7.png)
 
 # Metodologia
 
