@@ -1,7 +1,6 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7588938&assignment_repo_type=AssignmentRepo)
 # SIP - Building Security
-  O projeto SIP - Building Security, tem como objetivo resolver o problema da falta de segurança predial, problema este que atinge grande parte dos moradores e funcionários de um prédio, que em casos de emergência não sabem como agir e muitas vezes demoram a ser notificados de determinada situação emergencial que está acontecendo no prédio.
-  O sistema informará quais os equipamentos de segurança possuem no prédio em cada andar, com um cronograma da última e próxima data de revisão, envia uma notificação aos moradores em caso de ocorrência de alguma emergência e fornece uma espécie de treinamento de primeiros socorros, através de vídeos e textos úteis para consulta.
+  O projeto SIP - Building Security, tem como objetivo otimizar e gerenciar os problemas diários que os moradores e funcionários de um prédio/condomínio sofrem. Além disso, possui o intuito de auxiliar o ́sındico a priorizar demandas de acordo com sua importância e garantir a melhoria contínua e a qualidade das demandas preditivas.
 
 ## Alunos integrantes da equipe
 
