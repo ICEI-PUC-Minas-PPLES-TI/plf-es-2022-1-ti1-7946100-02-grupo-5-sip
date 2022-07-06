@@ -413,7 +413,6 @@ As tecnologias utilizadas para resolver o problema e implementar sua solução f
  - AJAX:
 	Combinação de várias tecnologias para permitir aplicações interativas 
  - JASON:
- 
 	    Utilizado para a troca de dados pela Web. 
  - LocalStorage:
  	Utilizado para a troca de dados pela Web. Ele oferece um armazenamento permanente de dados e que podem ser acessados a partir de qualquer janela do site.
@@ -439,9 +438,13 @@ As tecnologias utilizadas para resolver o problema e implementar sua solução f
 > item textualmente comentando e complementando o que está apresentado
 > nas imagens.
 
+
 ## Arquitetura da solução
 
 ......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+
+
+![Diagrama de Arquitetura SIP](https://user-images.githubusercontent.com/103376249/177440759-2ac4c9ff-205b-4c9c-8792-7bf36122310a.jpg)
 
 > Inclua um diagrama da solução e descreva os módulos e as tecnologias
 > que fazem parte da solução. Discorra sobre o diagrama.
