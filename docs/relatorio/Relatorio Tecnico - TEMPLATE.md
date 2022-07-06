@@ -159,7 +159,7 @@ Link de acesso ao protótipo interativo: https://www.figma.com/file/96nd2RS4AxKH
 
 ## User Flow
 
-> ![UserFlow](images/userflow.jpg)
+> ![UserFlow](images/user-flow.jpg)
 
 
 ## Wireframes
