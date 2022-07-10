@@ -12,10 +12,7 @@
 ## Professores responsáveis
 
 * Amália Soares Vieira de Vasconcelos
-* Joao Luiz Silva Barbosa
 * Rommel Vieira Carneiro
-* Simone Alves Nogueira
-
 
 ## Instruções de utilização
 
