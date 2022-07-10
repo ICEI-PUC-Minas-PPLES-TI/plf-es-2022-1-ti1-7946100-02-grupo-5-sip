@@ -1,6 +1,6 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: SIP - Chamados Prediais
 authors:
   - family-names: Mattioly Andrade
     given-names: Bárbara
@@ -10,10 +10,26 @@ authors:
     given-names: Marco
   - family-names: Henrique Pimenta Ribeiro
     given-names: Pedro
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Soares Vieira de Vasconcelos
+    given-names: Amália
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Silva Barbosa
+    given-names: João Luiz
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Alves Nogueira
+    given-names: Simone
 keywords:
   - Chamados Prediais
   - Agilidade
-repository-code: 7946100-02
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-02-grupo-5-sip
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-05
